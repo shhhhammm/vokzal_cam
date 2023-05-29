@@ -13,9 +13,3 @@ def set_pin(board, pin):
 
 def digitalWrite(board, pin, value):
     send_to_board(board, 2, pin,  value)
-
-
-
-board = connect("COM3")
-set_pin(board, 13)
-digitalWrite(board, 13, 0)
